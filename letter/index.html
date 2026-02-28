@@ -1,1 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagen con Link</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #000;
+        }
+        img {
+            max-width: 90%;
+            max-height: 90%;
+            object-fit: contain;
+            border: none;
+            transition: transform 0.3s ease; /* Efecto suave al pasar el mouse */
+        }
+        img:hover {
+            transform: scale(1.02); /* Se agranda un poquito al pasar el mouse */
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
 
+    <a href="https://TU-LINK-AQUI.com" target="_blank">
+        <img src="tu-imagen.jpg" alt="Haz clic aquí">
+    </a>
+
+</body>
+</html>
